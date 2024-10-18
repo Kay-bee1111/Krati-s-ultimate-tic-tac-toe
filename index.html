@@ -3,156 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive 3x3 Grid</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f9f9f9;
-        }
-
-        .big-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 5px;
-            width: 70vw;
-            height: 70vw;
-            max-width: 500px;
-            max-height: 500px;
-        }
-
-        .large-cell {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 2px;
-            background-color: #333;
-        }
-
-        .small-cell {
-            background-color: #fff;
-            border: 1px solid #999;
-            height: 100%;
-            width: 100%;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .small-cell:hover {
-            background-color: #f0f0f0;
-        }
-
-    </style>
+    <title>Krati Bhardwaj Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+    <script defer src="landing.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="game.html">Gameboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="hero">
+            
+            <div class="herocont">
+            
+            <h1>Ultictoe</h1>
+            <h3>The Ultimate Tic Tac Toe</h3>
+            
+                <button onclick="window.location.href='rules.html'">Game Rules</button>
+                <button onclick="window.location.href='game.html'">Play Game</button>
 
-    <div class="big-grid">
-        <!-- Large Grid (Outer 3x3) -->
-        <div class="large-cell" id="big1">
-            <div class="small-cell" id="small11"></div>
-            <div class="small-cell" id="small12"></div>
-            <div class="small-cell" id="small13"></div>
-            <div class="small-cell" id="small14"></div>
-            <div class="small-cell" id="small15"></div>
-            <div class="small-cell" id="small16"></div>
-            <div class="small-cell" id="small17"></div>
-            <div class="small-cell" id="small18"></div>
-            <div class="small-cell" id="small19"></div>
+            </div>
         </div>
-        <div class="large-cell" id="big2">
-            <div class="small-cell" id="small21"></div>
-            <div class="small-cell" id="small22"></div>
-            <div class="small-cell" id="small23"></div>
-            <div class="small-cell" id="small24"></div>
-            <div class="small-cell" id="small25"></div>
-            <div class="small-cell" id="small26"></div>
-            <div class="small-cell" id="small27"></div>
-            <div class="small-cell" id="small28"></div>
-            <div class="small-cell" id="small29"></div>
+    </section>
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p><b>Hey! Wondering who I am? </b> Let me introduce myself.</p>
+            <p>I am Krati Bhardwaj, a web developer, poet, and engineering student at IIIT Bhagalpur.I like making small and engaging web projects, but the idea of <b>Ultictoe</b> came to me out of boredom, well yes you heard it right. Tic-tac-toe is the first game that pops in the mind when you're bored. you grab a partner, something to scribble, and somewhere to scribble onto. But doesn't it get boring after awhile? We're all grown ups and end up dragging every game to a draw. Where's the fun then?</p>
+            <p>That's when an angel introduced me to this game called <b>"The Ultimate Tic-Tac-Toe"</b> This is my go to game now, eventhough I mostly lose, I love the way it challenges your mind. I had great fun making this project, I hope you have fun playing it too!</p>
         </div>
-        <div class="large-cell" id="big3">
-            <div class="small-cell" id="small31"></div>
-            <div class="small-cell" id="small32"></div>
-            <div class="small-cell" id="small33"></div>
-            <div class="small-cell" id="small34"></div>
-            <div class="small-cell" id="small35"></div>
-            <div class="small-cell" id="small36"></div>
-            <div class="small-cell" id="small37"></div>
-            <div class="small-cell" id="small38"></div>
-            <div class="small-cell" id="small39"></div>
-        </div>
-        <div class="large-cell" id="big4">
-            <div class="small-cell" id="small41"></div>
-            <div class="small-cell" id="small42"></div>
-            <div class="small-cell" id="small43"></div>
-            <div class="small-cell" id="small44"></div>
-            <div class="small-cell" id="small45"></div>
-            <div class="small-cell" id="small46"></div>
-            <div class="small-cell" id="small47"></div>
-            <div class="small-cell" id="small48"></div>
-            <div class="small-cell" id="small49"></div>
-        </div>
-        <div class="large-cell" id="big5">
-            <div class="small-cell" id="small51"></div>
-            <div class="small-cell" id="small52"></div>
-            <div class="small-cell" id="small53"></div>
-            <div class="small-cell" id="small54"></div>
-            <div class="small-cell" id="small55"></div>
-            <div class="small-cell" id="small56"></div>
-            <div class="small-cell" id="small57"></div>
-            <div class="small-cell" id="small58"></div>
-            <div class="small-cell" id="small59"></div>
-        </div>
-        <div class="large-cell" id="big6">
-            <div class="small-cell" id="small61"></div>
-            <div class="small-cell" id="small62"></div>
-            <div class="small-cell" id="small63"></div>
-            <div class="small-cell" id="small64"></div>
-            <div class="small-cell" id="small65"></div>
-            <div class="small-cell" id="small66"></div>
-            <div class="small-cell" id="small67"></div>
-            <div class="small-cell" id="small68"></div>
-            <div class="small-cell" id="small69"></div>
-        </div>
-        <div class="large-cell" id="big7">
-            <div class="small-cell" id="small71"></div>
-            <div class="small-cell" id="small72"></div>
-            <div class="small-cell" id="small73"></div>
-            <div class="small-cell" id="small74"></div>
-            <div class="small-cell" id="small75"></div>
-            <div class="small-cell" id="small76"></div>
-            <div class="small-cell" id="small77"></div>
-            <div class="small-cell" id="small78"></div>
-            <div class="small-cell" id="small79"></div>
-        </div>
-        <div class="large-cell" id="big8">
-            <div class="small-cell" id="small81"></div>
-            <div class="small-cell" id="small82"></div>
-            <div class="small-cell" id="small83"></div>
-            <div class="small-cell" id="small84"></div>
-            <div class="small-cell" id="small85"></div>
-            <div class="small-cell" id="small86"></div>
-            <div class="small-cell" id="small87"></div>
-            <div class="small-cell" id="small88"></div>
-            <div class="small-cell" id="small89"></div>
-        </div>
-        <div class="large-cell" id="big9">
-            <div class="small-cell" id="small91"></div>
-            <div class="small-cell" id="small92"></div>
-            <div class="small-cell" id="small93"></div>
-            <div class="small-cell" id="small94"></div>
-            <div class="small-cell" id="small95"></div>
-            <div class="small-cell" id="small96"></div>
-            <div class="small-cell" id="small97"></div>
-            <div class="small-cell" id="small98"></div>
-            <div class="small-cell" id="small99"></div>
-        </div>
-    </div>
-    <script src="game.js"></script>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Krati Bhardwaj. All rights reserved.</p>
+    </footer>
 </body>
 </html>
